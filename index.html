@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leticia Lorrane | Lash Designer</title>
+    <meta
+      name="description"
+      content="Landing page premium para especialista em extensão de cílios com foco em agendamento pelo WhatsApp."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <nav class="container nav" aria-label="Navegacao principal">
+        <a class="brand brand-wordmark" href="#inicio" aria-label="Leticia Lorrane">
+          <span class="brand-text">Leticia Lorrane</span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-links" data-nav>
+          <a href="#inicio">Início</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#resultados">Resultados</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#depoimentos">Depoimentos</a>
+          <a href="#contato">Contato</a>
+        </div>
+
+        <a class="btn btn-dark nav-cta" data-whatsapp href="#" target="_blank" rel="noopener">
+          Agendar agora
+        </a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero hero-cover hero-artwork" id="inicio">
+        <img
+          class="hero-cover-image"
+          src="assets/img/leticia-lorrane-hero.png"
+          alt="Arte de Leticia Lorrane Lash Designer com close-up de olho com cílios feitos"
+        />
+        <a class="hero-scroll" href="#video" aria-label="Ir para vídeo"></a>
+      </section>
+
+      <section class="video-call section" id="video" aria-labelledby="video-title">
+        <div class="container video-call-grid">
+          <div class="section-heading reveal">
+            <span class="eyebrow">Chamada especial</span>
+            <h2 id="video-title">Um dia cuidando de olhares lindos</h2>
+            <p>
+              Acompanhe um pouco da rotina no studio: manutenções, novas aplicações e aquele
+              cuidado de perto que deixa cada resultado mais leve, marcante e personalizado.
+            </p>
+            <p>
+              Cada atendimento é pensado para valorizar seu olhar com conforto, técnica e um
+              acabamento feito sob medida para você se sentir ainda mais confiante.
+            </p>
+          </div>
+
+          <div class="video-frame reveal">
+            <video
+              controls
+              preload="metadata"
+              poster="assets/img/leticia-lorrane-video-poster.jpg"
+            >
+              <source src="assets/video/chamada-leticia-lorrane.mp4" type="video/mp4" />
+              Seu navegador não suporta vídeo com áudio.
+            </video>
+          </div>
+        </div>
+      </section>
+
+      <section class="benefits section" aria-labelledby="benefits-title">
+        <div class="container">
+          <div class="section-heading center reveal">
+            <span class="eyebrow">Benefícios</span>
+            <h2 id="benefits-title">Mais beleza, menos esforço na rotina</h2>
+          </div>
+
+          <div class="benefit-grid">
+            <article class="benefit-card reveal">
+              <span class="mini-icon icon-eye"></span>
+              <h3>Olhar mais marcante</h3>
+              <p>Realce elegante para destacar sua expressao sem exageros.</p>
+            </article>
+            <article class="benefit-card reveal">
+              <span class="mini-icon icon-clock"></span>
+              <h3>Praticidade na rotina</h3>
+              <p>Acorde pronta e reduza o tempo com maquiagem todos os dias.</p>
+            </article>
+            <article class="benefit-card reveal">
+              <span class="mini-icon icon-spark"></span>
+              <h3>Natural ou glamouroso</h3>
+              <p>Escolha o efeito ideal para sua personalidade e ocasião.</p>
+            </article>
+            <article class="benefit-card reveal">
+              <span class="mini-icon icon-shield"></span>
+              <h3>Técnica segura</h3>
+              <p>Atendimento personalizado com cuidado, higiene e precisão.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="services section" id="servicos" aria-labelledby="services-title">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="eyebrow">Serviços</span>
+            <h2 id="services-title">Técnicas para cada estilo de olhar</h2>
+            <p>
+              Escolha entre acabamentos sutis, volumosos ou curvaturas naturais, sempre com
+              avaliação individual.
+            </p>
+          </div>
+
+          <div class="service-grid">
+            <article class="service-card reveal">
+              <span class="service-icon icon-line-lash"></span>
+              <h3>Fio a fio</h3>
+              <p>Acabamento delicado, leve e ideal para quem ama naturalidade.</p>
+              <strong>A partir de R$ 120</strong>
+              <a href="#contato">Saiba mais</a>
+            </article>
+            <article class="service-card featured reveal">
+              <span class="service-icon icon-volume"></span>
+              <h3>Volume brasileiro</h3>
+              <p>Volume equilibrado, elegante e perfeito para realçar o olhar.</p>
+              <strong>A partir de R$ 150</strong>
+              <a href="#contato">Saiba mais</a>
+            </article>
+            <article class="service-card reveal">
+              <span class="service-icon icon-glam"></span>
+              <h3>Volume russo</h3>
+              <p>Efeito intenso e sofisticado para quem deseja mais presença.</p>
+              <strong>A partir de R$ 180</strong>
+              <a href="#contato">Saiba mais</a>
+            </article>
+            <article class="service-card reveal">
+              <span class="service-icon icon-lift"></span>
+              <h3>Lash lifting</h3>
+              <p>Curvatura dos fios naturais com resultado elegante e moderno.</p>
+              <strong>A partir de R$ 100</strong>
+              <a href="#contato">Saiba mais</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="results section" id="resultados" aria-labelledby="results-title">
+        <div class="container">
+          <div class="section-heading center reveal">
+            <span class="eyebrow">Antes e depois</span>
+            <h2 id="results-title">Resultados que valorizam sua beleza natural</h2>
+          </div>
+
+          <div class="results-grid">
+            <article class="result-card tall reveal">
+              <img
+                class="result-image"
+                src="https://images.pexels.com/photos/21412169/pexels-photo-21412169.jpeg?auto=compress&cs=tinysrgb&w=1000"
+                alt="Resultado de extensão de cílios com volume destacado"
+              />
+              <div class="result-caption">
+                <span>Volume brasileiro</span>
+                <strong>Resultado final</strong>
+              </div>
+            </article>
+            <article class="result-card reveal">
+              <img
+                class="result-image"
+                src="https://images.pexels.com/photos/34930118/pexels-photo-34930118.jpeg?auto=compress&cs=tinysrgb&w=900"
+                alt="Cliente recebendo aplicação de extensão de cílios em salão"
+              />
+              <div class="result-caption">
+                <span>Fio a fio</span>
+                <strong>Aplicação</strong>
+              </div>
+            </article>
+            <article class="result-card reveal">
+              <img
+                class="result-image"
+                src="https://images.pexels.com/photos/33794264/pexels-photo-33794264.jpeg?auto=compress&cs=tinysrgb&w=900"
+                alt="Bandejas de cílios para extensão em atendimento profissional"
+              />
+              <div class="result-caption">
+                <span>Preparação</span>
+                <strong>Detalhes</strong>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="about section" id="sobre" aria-labelledby="about-title">
+        <div class="container about-grid">
+          <div class="about-photo reveal">
+            <figure class="professional-placeholder professional-photo">
+              <img
+                src="https://images.pexels.com/photos/34930118/pexels-photo-34930118.jpeg?auto=compress&cs=tinysrgb&w=900"
+                alt="Profissional realizando extensão de cílios em cliente"
+              />
+              <figcaption>Lash artist</figcaption>
+            </figure>
+          </div>
+
+          <div class="about-content reveal">
+            <span class="eyebrow">Sobre a especialista</span>
+            <h2 id="about-title">Beleza feita com técnica, calma e olhar clínico</h2>
+            <p>
+              Cada atendimento é feito com cuidado, precisão e atenção aos detalhes para entregar
+              um resultado único, confortável e sofisticado.
+            </p>
+
+            <ul class="check-list">
+              <li>Materiais de qualidade</li>
+              <li>Atendimento individual</li>
+              <li>Técnica personalizada</li>
+              <li>Ambiente confortável</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials section" id="depoimentos" aria-labelledby="testimonials-title">
+        <div class="container">
+          <div class="section-heading center reveal">
+            <span class="eyebrow">Depoimentos</span>
+            <h2 id="testimonials-title">Clientes que saem se sentindo impecáveis</h2>
+          </div>
+
+          <div class="testimonial-grid">
+            <article class="testimonial-card reveal">
+              <div class="stars" aria-label="5 estrelas">
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+              <p>"Meu olhar ficou maravilhoso!"</p>
+              <strong>Marina Costa</strong>
+            </article>
+            <article class="testimonial-card reveal">
+              <div class="stars" aria-label="5 estrelas">
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+              <p>"Atendimento impecável e resultado perfeito."</p>
+              <strong>Bruna Almeida</strong>
+            </article>
+            <article class="testimonial-card reveal">
+              <div class="stars" aria-label="5 estrelas">
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+              <p>"Nunca me senti tão confiante."</p>
+              <strong>Camila Rocha</strong>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="final-cta" id="contato" aria-labelledby="contact-title">
+        <div class="container final-cta-inner reveal">
+          <span class="eyebrow">Agendamento</span>
+          <h2 id="contact-title">Seu olhar merece esse cuidado</h2>
+          <p>
+            Agende agora seu horário e transforme sua autoestima com cílios feitos sob medida para
+            você.
+          </p>
+          <a class="btn btn-gold" data-whatsapp href="#" target="_blank" rel="noopener">
+            Falar no WhatsApp
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <a class="brand brand-wordmark footer-brand" href="#inicio">
+          <span class="brand-text">Leticia Lorrane</span>
+        </a>
+
+        <div class="footer-links">
+          <a href="#servicos">Serviços</a>
+          <a href="#resultados">Resultados</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#contato">Contato</a>
+        </div>
+
+        <div class="footer-contact">
+          <a class="social-link" href="https://www.instagram.com/" target="_blank" rel="noopener">
+            <svg class="social-icon instagram-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <defs>
+                <linearGradient id="instagram-gradient" x1="3" y1="21" x2="21" y2="3">
+                  <stop offset="0" stop-color="#f58529" />
+                  <stop offset="0.35" stop-color="#dd2a7b" />
+                  <stop offset="0.7" stop-color="#8134af" />
+                  <stop offset="1" stop-color="#515bd4" />
+                </linearGradient>
+              </defs>
+              <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+              <circle cx="12" cy="12" r="4"></circle>
+              <circle cx="17.5" cy="6.5" r="1.2"></circle>
+            </svg>
+            <span>Instagram</span>
+          </a>
+          <a class="social-link" data-whatsapp href="#" target="_blank" rel="noopener">
+            <svg class="social-icon whatsapp-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M19.1 4.9A9.8 9.8 0 0 0 3.7 16.7L2.5 21.5l4.9-1.2A9.8 9.8 0 0 0 19.1 4.9Z"
+              ></path>
+              <path
+                d="M8.9 7.6c-.2-.5-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.4-1.1 1.1-1.1 2.6s1.1 3 1.2 3.2c.2.2 2.2 3.5 5.4 4.7 2.7 1.1 3.2.9 3.8.8.6-.1 1.9-.8 2.2-1.6.3-.8.3-1.4.2-1.6-.1-.1-.3-.2-.7-.4l-2.1-1c-.3-.1-.6-.2-.8.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.7.1-.3-.2-1.3-.5-2.5-1.6-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.6c.2-.2.2-.3.3-.5.1-.2.1-.4 0-.6l-1-2.3Z"
+              ></path>
+            </svg>
+            <span>WhatsApp</span>
+          </a>
+          <span>Centro, sua cidade</span>
+        </div>
+
+        <p>Leticia Lorrane. Todos os direitos reservados. <span data-year></span></p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
