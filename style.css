@@ -17,6 +17,7 @@
   --accent-gradient: linear-gradient(100deg, #ff7a3d 0%, #ff4f9a 36%, #8b5cf6 68%, #4f6bff 100%);
   --shadow: 0 26px 80px rgba(0, 0, 0, 0.42);
   --radius: 24px;
+  --logo-serif: "Cormorant Garamond", "Playfair Display", Georgia, serif;
   --serif: "Playfair Display", Georgia, serif;
   --sans: "Montserrat", Arial, sans-serif;
 }
@@ -189,7 +190,7 @@ button {
 }
 
 .brand-text {
-  font-family: var(--serif);
+  font-family: var(--logo-serif);
   font-size: 1.26rem;
 }
 
@@ -428,13 +429,16 @@ button {
 }
 
 .hero-artwork {
+  display: grid;
   min-height: 100vh;
   padding: 0;
+  place-items: center start;
 }
 
 .hero-artwork::before {
   background:
-    linear-gradient(180deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.2)),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.98) 0%, rgba(0, 0, 0, 0.9) 36%, rgba(0, 0, 0, 0.4) 66%, rgba(0, 0, 0, 0.08) 100%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.32)),
     radial-gradient(circle at 15% 50%, rgba(139, 92, 246, 0.08), transparent 28%);
 }
 
@@ -446,7 +450,7 @@ button {
 
 .hero-artwork .hero-cover-image {
   object-fit: cover;
-  object-position: center;
+  object-position: right center;
   filter: none;
   transform: none;
 }
@@ -455,8 +459,42 @@ button {
   display: none;
 }
 
-.hero-mobile-copy {
-  display: none;
+.hero-copy {
+  position: relative;
+  z-index: 3;
+  width: min(58vw, 920px);
+  margin-left: clamp(28px, 9vw, 150px);
+  padding-top: 44px;
+  text-align: center;
+  text-shadow: 0 14px 38px rgba(0, 0, 0, 0.72);
+}
+
+.hero-copy span {
+  display: block;
+  font-family: var(--logo-serif);
+  font-size: clamp(4.4rem, 7.6vw, 9.8rem);
+  font-weight: 400;
+  line-height: 0.82;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.hero-copy strong {
+  display: block;
+  margin-top: 22px;
+  font-family: var(--logo-serif);
+  font-size: clamp(3.1rem, 5.2vw, 7rem);
+  font-weight: 700;
+  line-height: 0.82;
+  text-transform: lowercase;
+}
+
+.hero-copy p {
+  max-width: 780px;
+  margin: 48px auto 0;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: clamp(1rem, 1.7vw, 2.2rem);
+  line-height: 1.55;
 }
 
 .hero-cover .hero-grid {
@@ -1555,10 +1593,10 @@ h3 {
   }
 
   .hero-artwork {
-    display: grid;
+    display: block;
     min-height: 100svh;
     padding: 74px 0 74px;
-    place-items: end center;
+    place-items: initial;
     background:
       radial-gradient(circle at 50% 34%, rgba(255, 79, 154, 0.14), transparent 28%),
       #000;
@@ -1571,8 +1609,8 @@ h3 {
 
   .hero-artwork::before {
     background:
-      linear-gradient(180deg, rgba(0, 0, 0, 0.14) 0%, rgba(0, 0, 0, 0.12) 38%, rgba(0, 0, 0, 0.82) 100%),
-      linear-gradient(90deg, rgba(0, 0, 0, 0.74) 0%, rgba(0, 0, 0, 0.28) 52%, rgba(0, 0, 0, 0.04) 100%);
+      linear-gradient(180deg, rgba(0, 0, 0, 0.02) 0%, rgba(0, 0, 0, 0.1) 44%, rgba(0, 0, 0, 0.8) 78%, #000 100%),
+      linear-gradient(90deg, rgba(0, 0, 0, 0.44) 0%, rgba(0, 0, 0, 0.1) 52%, rgba(0, 0, 0, 0.04) 100%);
   }
 
   .hero-artwork::after {
@@ -1582,42 +1620,47 @@ h3 {
   }
 
   .hero-artwork .hero-cover-image {
-    position: absolute;
+    position: relative;
     display: block;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: 68% center;
+    height: auto;
+    max-height: calc(100svh - 74px);
+    object-fit: contain;
+    object-position: center top;
   }
 
-  .hero-mobile-copy {
-    position: relative;
+  .hero-copy {
+    position: absolute;
+    left: 50%;
+    bottom: 76px;
     z-index: 3;
     display: grid;
     width: min(100% - 28px, 520px);
-    margin: 0 auto 58px;
+    margin: 0;
+    padding-top: 0;
     justify-items: center;
     text-align: center;
     text-shadow: 0 12px 34px rgba(0, 0, 0, 0.78);
+    transform: translateX(-50%);
   }
 
-  .hero-mobile-copy span {
-    font-family: var(--serif);
+  .hero-copy span {
+    font-family: var(--logo-serif);
     font-size: clamp(2.15rem, 12vw, 4.2rem);
     line-height: 0.95;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
   }
 
-  .hero-mobile-copy strong {
+  .hero-copy strong {
     margin-top: 4px;
-    font-family: var(--serif);
+    font-family: var(--logo-serif);
     font-size: clamp(1.5rem, 8vw, 2.7rem);
     line-height: 1;
     text-transform: lowercase;
   }
 
-  .hero-mobile-copy p {
+  .hero-copy p {
     max-width: 360px;
     margin: 18px 0 0;
     color: rgba(255, 255, 255, 0.88);
@@ -1649,6 +1692,28 @@ h3 {
 
   .hero-actions {
     display: grid;
+  }
+
+  .services {
+    background:
+      linear-gradient(180deg, rgba(0, 0, 0, 0.28) 0%, rgba(0, 0, 0, 0.64) 36%, rgba(0, 0, 0, 0.92) 100%),
+      radial-gradient(circle at 70% 18%, rgba(255, 79, 154, 0.2), transparent 28%),
+      url("assets/img/leticia-lorrane-services-bg.png") 72% top / auto 560px no-repeat,
+      #020403;
+  }
+
+  .services::before {
+    background:
+      linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.66) 48%, rgba(0, 0, 0, 0.94) 100%),
+      radial-gradient(circle at 76% 10%, rgba(255, 79, 154, 0.2), transparent 28%);
+  }
+
+  .services .section-heading {
+    padding-top: 210px;
+  }
+
+  .service-card {
+    background: rgba(5, 6, 7, 0.78);
   }
 
   .btn {
